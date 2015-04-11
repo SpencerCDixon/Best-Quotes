@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <title></title>
+
+</head>
+<body>
+
+<div class="container">
+  <h1>All Quotes</h1>
+  <% if quotes %>
+    <% quotes.each do |q| %>
+      <h4><a href="/quotes/<%= q.id %>"><%= q.quote %> </a></h4>
+      <p>Submitted by... <%= q.submitter %> </p>
+    <% end %>
+  <% end %>
+</div>
+
+</body>
+</html>
