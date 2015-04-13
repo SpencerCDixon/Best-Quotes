@@ -12,4 +12,8 @@ class QuotesController < ::Rulers::Controller
 
   def edit
   end
+
+  def redirect
+    redirect_to '/quotes/5'
+  end
 end

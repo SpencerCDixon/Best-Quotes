@@ -10,6 +10,8 @@ app.route do
   match "", "quotes#index"
   # Matches the home route to quotes#index
 
+  match ":controller/redirect/", default: { "action" => "redirect" }
+
   # default routes
   match ":controller/:id/:action"
   # Any word after an id will hit a specific action like edit or preview

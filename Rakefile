@@ -13,7 +13,7 @@ namespace :db do
 end
 
 task :server do
-  system 'bundle exec rackup -p 3001'
+  system 'bundle exec rackup -p 3002'
 end
 
 
