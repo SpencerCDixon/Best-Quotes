@@ -6,6 +6,7 @@ app = BestQuotes::Application.new
 use Rack::ContentType
 
 app.route do
+  binding.pry
   # Calling #route creates the @route_obj
   match "", "quotes#index"
   # Matches the home route to quotes#index
